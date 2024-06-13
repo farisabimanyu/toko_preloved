@@ -2,7 +2,7 @@
 
 ## Mas Abi  abi ini aku yg perubahan baru tak masukin branch develop ya
 
-## Tinggal ke pull request
+## Pull request
 
 biar ga konflik<br>
 Mau login regist pake laravel ui ga?
