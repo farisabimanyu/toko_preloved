@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\TransactionController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -17,4 +19,12 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::resource('products', ProductController::class)->middleware('auth');
+Route::resource('transactions', TransactionController::class)->middleware('auth');
+
+
+require __DIR__ . '/auth.php';
