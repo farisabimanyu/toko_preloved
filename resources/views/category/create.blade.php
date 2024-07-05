@@ -1,6 +1,6 @@
 @extends('../admin')
 @section('container')
-<body id="page-top">
+
   <div id="wrapper">
     
 
@@ -76,7 +76,5 @@
 
   
 
-</body>
 
-</html>
 @endsection

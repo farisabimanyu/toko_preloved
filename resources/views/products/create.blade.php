@@ -2,7 +2,7 @@
 @section('container')
     
 
-<body id="page-top">
+
   <div id="wrapper">
     
 
@@ -102,5 +102,5 @@
     </div>
   </div>
 
-</html>
+
 @endsection
